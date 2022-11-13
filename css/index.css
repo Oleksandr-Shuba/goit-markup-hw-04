@@ -7,6 +7,13 @@
     background-color: var(--dark-grey);
 }
 
+.top-banner {
+    background-image: url('../images/index/header-Img.jpg');
+    background-size: 1600px, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .top-banner .btn-blue {
     font-weight: 700;
@@ -71,7 +78,8 @@
     letter-spacing: 0.03em;
     color: var(--text-main-color);
 }
-.activity{
+
+.activity {
     padding-top: 0;
 }
 
@@ -89,7 +97,7 @@
 /* -----TEAM--------- */
 .team {
     background-color: var(--grey-bright);
-    
+
 
 }
 
@@ -121,7 +129,8 @@
     color: var(--text-main-color);
 
 }
-.team-member-pic{
+
+.team-member-pic {
     display: block;
 }
 
@@ -140,3 +149,38 @@
     margin-top: 10px;
 
 }
+
+
+
+/* -------REGULAR---CUSTOMERS---- */
+
+.customers {
+    
+}
+
+.container {}
+
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 30;
+    padding-bottom: 94px;
+}
+
+.container-customers {
+    
+}
+
+.customers-item {}
+
+.customers-item-pic {}
