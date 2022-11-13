@@ -14,6 +14,7 @@ body {
     font-style: normal;
     color: var(--text-main-color);
 }
+
 h1,
 h2,
 h3,
@@ -44,10 +45,11 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-   
+
 
 }
-.section{
+
+.section {
     padding-bottom: 94px;
     padding-top: 94px;
 }
@@ -97,8 +99,9 @@ a {
 
 .studio {
     color: #000000;
-    
+
 }
+
 /* -----logo ends-----*/
 
 
@@ -106,19 +109,38 @@ a {
     border: 1px solid #ECECEC;
 }
 
-.flex{
-   display: flex;
-   align-items: center; 
+.flex {
+    display: flex;
+    align-items: center;
 }
 
 
 /*------------------ CONTACTS--------------- */
-.contact-list{
-    display: flex; 
+.contact-list {
+    display: flex;
     gap: 50px;
-    margin-left:  auto;
+    margin-left: auto;
+
+}
+
+.contact-list-item::before {
+    display: block;
+    content: "";
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
     
 }
+
+.icon-envelope::before {
+   background-image: url(../images/index/envelope\ \(hover\)-icon.svg);
+}
+.icon-smartphone::before{
+    background-image: url(../images/index/smartphone-icon.svg);
+}
+
+
+
 .contact {
     font-weight: 500;
     font-size: 14px;
@@ -132,16 +154,17 @@ a {
 }
 
 
+
 /* --------FOOTER------------------ */
 
 /* footer-logo-starts */
 
 
 
-.footer .logo{
+.footer .logo {
     margin-bottom: 20px;
-    margin-right: 0; 
-    
+    margin-right: 0;
+
 }
 
 .footer .studio {
@@ -166,11 +189,12 @@ a {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--mixed);
-    
+
 }
-.footer .contact-list{
-flex-direction: column;
-gap: 9px;
+
+.footer .contact-list {
+    flex-direction: column;
+    gap: 9px;
 }
 
 .footer .contact:hover {
@@ -186,12 +210,13 @@ gap: 9px;
 
 
 /* ---- Nav menu------*/
-.nav-list{
+.nav-list {
     display: flex;
     gap: 50px;
-    
-    
+
+
 }
+
 .link {
     font-weight: 500;
     font-size: 14px;
@@ -199,7 +224,7 @@ gap: 9px;
     letter-spacing: 0.02em;
     color: var(--text-main-color);
     display: block;
-    
+
 }
 
 
@@ -211,8 +236,3 @@ gap: 9px;
 }
 
 /*--Nav menu end-----*/
-
-
-
-
-

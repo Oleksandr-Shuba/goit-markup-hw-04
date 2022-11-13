@@ -12,7 +12,7 @@
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/index/header-Img.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/index/header-Img.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,6 +60,34 @@
     display: flex;
     gap: 30px;
 }
+
+.top-banner-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+}
+
+.icon-detail::before {
+    background-image: url(../images/index/antenna-icon.svg);
+
+}
+
+.icon-punctual::before {
+    background-image: url(../images/index/clock-icon.svg);
+}
+
+.icon-planning::before {
+    background-image: url(../images/index/diagram-icon.svg);
+}
+
+.icon-hitech::before {
+    background-image: url(../images/index/astronaut-icon.svg);
+}
+
 
 .top-banner-text {
     font-weight: 400;
