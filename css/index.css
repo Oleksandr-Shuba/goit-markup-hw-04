@@ -8,8 +8,12 @@
 }
 
 .top-banner {
-    background-image: url('../images/index/header-Img.jpg');
-    background-size: 1600px, cover;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/index/header-Img.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -154,9 +158,7 @@
 
 /* -------REGULAR---CUSTOMERS---- */
 
-.customers {
-    
-}
+.customers {}
 
 .container {}
 
@@ -173,12 +175,16 @@
 
 .customers-list {
     display: flex;
-    gap: 30;
     padding-bottom: 94px;
+    gap: 30px;
+
 }
 
 .container-customers {
-    
+    background: #F5F4FA;
+    border-radius: 4px;
+
+
 }
 
 .customers-item {}
