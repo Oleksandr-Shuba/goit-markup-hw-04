@@ -116,30 +116,26 @@ a {
 
 
 /*------------------ CONTACTS--------------- */
-.contact-list {
+.header .contact-list {
     display: flex;
+    align-items: center;
     gap: 50px;
     margin-left: auto;
 
 }
 
-.contact-list-item::before {
-    display: block;
-    content: "";
-    height: 12px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
+.header .contact-list-item {}
+
+.contact .icon-envelope,
+.contact .icon-smartphone {
+    fill: var(--grey);
+    margin-right: 10px;
 }
 
-.icon-envelope::before {
-   background-image: url(../images/index/envelope\ \(hover\)-icon.svg);
+.contact:hover .icon-envelope,
+.contact:hover .icon-smartphone {
+    fill: var(--blue);
 }
-.icon-smartphone::before{
-    background-image: url(../images/index/smartphone-icon.svg);
-}
-
-
 
 .contact {
     font-weight: 500;
@@ -147,6 +143,7 @@ a {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--grey);
+
 }
 
 .contact:hover {
@@ -154,8 +151,45 @@ a {
 }
 
 
+/*----------SOCIAL ICONS-----------*/
+.soc-item {
+    width: 44px;
+    height: 44px;
+}
 
+.soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soc-icon {
+    fill: #AFB1B8;
+}
+
+.soc-icon:hover,
+.soc-icon:focus {
+    fill: #FFFFFF;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+    background-color: #2196F3;
+}
+
+.soc-link:hover .soc-icon {
+    fill: #FFFFFF;
+}
 /* --------FOOTER------------------ */
+
+.footer .columns {
+    display: flex;
+    gap: 70px;
+}
 
 /* footer-logo-starts */
 
@@ -193,6 +227,7 @@ a {
 }
 
 .footer .contact-list {
+    display: flex;
     flex-direction: column;
     gap: 9px;
 }
@@ -205,9 +240,30 @@ a {
     color: var(--white);
 }
 
+.footer .soc-items-title {
+font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 12px 0px 20px;
+}
 
+.footer .soc-items {
+    display: flex;
+    gap: 10px;
+}
 
+.footer .soc-link {
+color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+}
 
+.footer .soc-link:hover {
+    color: var(--white);
+    background: var(--blue);
+}
 
 /* ---- Nav menu------*/
 .nav-list {

@@ -61,31 +61,32 @@
     gap: 30px;
 }
 
-.top-banner-item::before {
-    display: block;
-    content: "";
+.top-banner-title{
+    padding-top: 30px;
+}
+
+.top-banner-item .icon {
     height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #F5F4FA;
+        border-radius: 4px;
 }
 
-.icon-detail::before {
-    background-image: url(../images/index/antenna-icon.svg);
-
+.icon-detail {
+    background-image: url(../images/index/antenna.svg);
 }
 
-.icon-punctual::before {
-    background-image: url(../images/index/clock-icon.svg);
+.icon-punctual {
+    background-image: url(../images/index/clock.svg);
 }
 
-.icon-planning::before {
-    background-image: url(../images/index/diagram-icon.svg);
+.icon-planning {
+    background-image: url(../images/index/diagram.svg);
 }
 
-.icon-hitech::before {
-    background-image: url(../images/index/astronaut-icon.svg);
+.icon-hitech {
+    background-image: url(../images/index/astronaut.svg);
 }
 
 
@@ -177,18 +178,20 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--grey);
-
     margin-top: 10px;
+    margin-bottom: 16px;
 
 }
 
+.team-member-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 
+
+}
 
 /* -------REGULAR---CUSTOMERS---- */
-
-.customers {}
-
-.container {}
 
 .customers-title {
     font-weight: 700;
@@ -202,6 +205,12 @@
 }
 
 .customers-list {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
     display: flex;
     padding-bottom: 94px;
     gap: 30px;
@@ -209,12 +218,25 @@
 }
 
 .container-customers {
-    background: #F5F4FA;
     border-radius: 4px;
 
 
 }
 
-.customers-item {}
+.customers-item {
+    width: 170px;
+    height: 92px;
+}
 
-.customers-item-pic {}
+.customers-link:hover {
+    border-color: var(--blue);
+    fill: var(--blue);
+}
+
+.customers-link {
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+    display: block;
+    padding: 16px 32px;
+}
