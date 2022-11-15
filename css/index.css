@@ -9,7 +9,6 @@
 
 .top-banner {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/index/header-Img.jpg');
@@ -27,8 +26,13 @@
     margin: 0px auto;
     display: block;
     padding: 10px 32px;
+
 }
 
+.top-banner .btn-blue:hover,
+.top-banner .btn-blue:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 
 
@@ -61,33 +65,14 @@
     gap: 30px;
 }
 
-.top-banner-title{
-    padding-top: 30px;
-}
 
 .top-banner-item .icon {
-    height: 120px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #F5F4FA;
-        border-radius: 4px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    text-align: center;
+    padding: 25px 0px;
 }
 
-.icon-detail {
-    background-image: url(../images/index/antenna.svg);
-}
-
-.icon-punctual {
-    background-image: url(../images/index/clock.svg);
-}
-
-.icon-planning {
-    background-image: url(../images/index/diagram.svg);
-}
-
-.icon-hitech {
-    background-image: url(../images/index/astronaut.svg);
-}
 
 
 .top-banner-text {
@@ -99,6 +84,9 @@
     margin-top: 10px;
 }
 
+.top-banner-specific .top-banner-title {
+    padding-top: 30px;
+}
 
 
 /* ---ACTIVITY---- */
@@ -205,14 +193,7 @@
 }
 
 .customers-list {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    padding-bottom: 94px;
     gap: 30px;
 
 }
@@ -223,12 +204,9 @@
 
 }
 
-.customers-item {
-    width: 170px;
-    height: 92px;
-}
 
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
     border-color: var(--blue);
     fill: var(--blue);
 }
